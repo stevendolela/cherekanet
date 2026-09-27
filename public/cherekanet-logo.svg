@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+<title id="title">CherekaNet Services</title><desc id="desc">Logo CherekaNet Services</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ef3c4f"/><stop offset="1" stop-color="#c60078"/></linearGradient></defs>
+<g transform="translate(35 18)">
+<path d="M285 42 A158 158 0 1 0 285 318" fill="none" stroke="url(#g)" stroke-width="92" stroke-linecap="butt"/>
+<circle cx="294" cy="12" r="15" fill="#d31678"/><circle cx="230" cy="30" r="11" fill="#ee5b25"/><circle cx="170" cy="70" r="10" fill="#11aaa1"/><circle cx="130" cy="116" r="7" fill="#5d2f91"/>
+<text x="30" y="226" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" fill="#1477b9">CherekaNet</text>
+<text x="300" y="278" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="5" fill="#11131b">Services</text>
+</g></svg>
