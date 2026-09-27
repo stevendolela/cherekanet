@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SiteHeader from "../../components/SiteHeader";
 import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
 
 const services = {
@@ -82,12 +83,7 @@ export default async function SolutionDetailPage({ params }: { params: Promise<{
 
   return (
     <main className="min-h-screen bg-[#f7f7f5]">
-      <header className="border-b border-black/10 bg-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
-          <Link href="/solutions" className="inline-flex items-center gap-2 text-sm font-bold"><ArrowLeft size={16}/> Toutes les solutions</Link>
-          <Link href="/" className="text-xl font-black tracking-tight">CHEREKA<span className="text-[#d51b8a]">NET</span></Link>
-        </div>
-      </header>
+      <SiteHeader />
 
       <section className="bg-[#10111a] px-6 py-24 text-white lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
