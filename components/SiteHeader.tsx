@@ -9,9 +9,7 @@ export default function SiteHeader() {
   return (
     <header className={`fixed left-0 right-0 top-0 z-50 border-b ${border} ${background} backdrop-blur-xl ${text}`}>
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-        <Link href="/" aria-label="CherekaNet — Accueil" className="flex h-14 w-44 items-center">
-          <img src="/cherekanet-logo.svg" alt="CherekaNet Services" className="h-12 w-full object-contain object-left" />
-        </Link>
+        <Link href="/" aria-label="CherekaNet — Accueil" className="text-lg font-black tracking-[-0.04em]">CHEREKANET</Link>
 
         <nav className={`hidden items-center gap-7 text-sm font-semibold md:flex ${muted}`}>
           <Link href="/solutions" className="transition hover:text-brand">Solutions</Link>
