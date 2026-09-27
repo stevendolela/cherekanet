@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://cherekane.net/sitemap.xml",
+    sitemap: "https://www.cherekane.net/sitemap.xml",
   };
 }
