@@ -28,7 +28,7 @@ export default function PartnershipsPage() {
             <p className="mt-12 text-xs font-black uppercase tracking-[.2em] text-black/35">Partenaire conseil & digital</p>
             <h2 className="mt-3 text-3xl font-black">Taaji Consulting</h2>
             <p className="mt-5 max-w-xl text-sm leading-7 text-black/55">
-              Un partenaire complémentaire pour accompagner les projets et mobiliser des expertises adaptées aux besoins des organisations.
+              Un partenaire stratégique pour accompagner CherekaNet dans ses projets de transformation digitale, de conseil et de développement de solutions numériques.
             </p>
           </article>
         </div>
