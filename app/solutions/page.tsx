@@ -75,7 +75,7 @@ export default function SolutionsPage() {
             <div className="grid gap-10 lg:grid-cols-[.65fr_1.35fr]">
               <div>
                 <p className="text-xs font-black uppercase tracking-[.2em] text-[#d51b8a]">0{index + 1}</p>
-                <h2 className="mt-4 text-3xl font-black">{group.title}</h2>
+                <Link href={`/solutions/${["tech","digital","communication","evenementiel","conseil-services"][index]}`} className="group inline-flex items-center gap-2"><h2 className="mt-4 text-3xl font-black">{group.title}</h2><ArrowRight size={18} className="mt-4 transition group-hover:translate-x-1"/></Link>
                 <p className="mt-4 leading-7 text-black/55">{group.intro}</p>
               </div>
               <div className="grid gap-3 sm:grid-cols-2">
