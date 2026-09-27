@@ -34,11 +34,11 @@ export default function Home() {
     <main>
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-black/10 bg-[#f7f7f5]/90 backdrop-blur">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-          <a href="#" className="text-xl font-black tracking-tight">CHEREKA<span className="text-brand">NET</span></Link>
+          <Link href="/" className="text-xl font-black tracking-tight">CHEREKA<span className="text-brand">NET</span></Link>
           <nav className="hidden items-center gap-7 text-sm font-semibold md:flex">
             <Link href="/solutions" className="hover:text-brand">Solutions</Link>
-            <a href="#expertise" className="hover:text-brand">Expertise</Link>
-            <a href="#methode" className="hover:text-brand">Notre méthode</Link>
+            <Link href="#expertise" className="hover:text-brand">Expertise</Link>
+            <Link href="#methode" className="hover:text-brand">Notre méthode</Link>
             <Link href="/realizations" className="hover:text-brand">Réalisations</Link>
             <Link href="/about" className="hover:text-brand">À propos</Link>
           </nav>
@@ -48,8 +48,8 @@ export default function Home() {
               <summary className="cursor-pointer list-none rounded-full border border-black/10 px-4 py-2 text-sm font-bold">Menu</summary>
               <div className="absolute right-0 top-12 w-56 rounded-2xl border border-black/10 bg-white p-2 text-sm font-semibold shadow-xl">
                 <Link href="/solutions" className="block rounded-xl px-4 py-3 hover:bg-black/5">Solutions</Link>
-                <a href="#expertise" className="block rounded-xl px-4 py-3 hover:bg-black/5">Expertise</Link>
-                <a href="#methode" className="block rounded-xl px-4 py-3 hover:bg-black/5">Notre méthode</Link>
+                <Link href="#expertise" className="block rounded-xl px-4 py-3 hover:bg-black/5">Expertise</Link>
+                <Link href="#methode" className="block rounded-xl px-4 py-3 hover:bg-black/5">Notre méthode</Link>
                 <Link href="/realizations" className="block rounded-xl px-4 py-3 hover:bg-black/5">Réalisations</Link>
                 <Link href="/about" className="block rounded-xl px-4 py-3 hover:bg-black/5">À propos</Link>
                 <Link href="/contact" className="mt-1 block rounded-xl bg-ink px-4 py-3 text-white">Parler de votre projet</Link>
