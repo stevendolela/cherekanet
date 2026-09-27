@@ -3,7 +3,7 @@ import SiteHeader from "../../components/SiteHeader";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 
 const categories = [
-  ["Tech", "Installations électriques, fibre, réseaux, sécurité et infrastructures."],
+  ["Tech", "Fibre, réseaux, sécurité, domotique, IRVE et infrastructures."],
   ["Digital", "Sites, applications et outils numériques."],
   ["Communication", "Supports, contenus et présence digitale."],
   ["Événementiel", "Événements privés et professionnels."]
