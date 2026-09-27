@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SiteHeader from "../components/SiteHeader";
 import {
   ArrowRight,
   Cable,
@@ -14,7 +15,7 @@ import {
 } from "lucide-react";
 
 const pillars = [
-  { number: "01", title: "Tech & Infrastructures", text: "Fibre & réseaux, sécurité, domotique, IRVE, construction et pilotage de projets techniques.", featured: true },
+  { number: "01", title: "Tech & Infrastructures", text: "Fibre & réseaux, sécurité, domotique, IRVE, construction et gestion de projet / AMOA.", featured: true },
   { number: "02", title: "Solutions digitales", text: "Sites internet, applications et gestion de projets digitaux." },
   { number: "03", title: "Communication", text: "Réseaux sociaux, vidéos, supports et objets de communication." },
   { number: "04", title: "Événementiel", text: "Traiteur, décoration, sonorisation et organisation d’événements." },
@@ -22,12 +23,12 @@ const pillars = [
 ];
 
 const technicalServices = [
+  { icon: CheckCircle2, title: "Gestion de projet / AMOA", text: "Cadrage, coordination, suivi et accompagnement de vos projets." },
   { icon: Cable, title: "Fibre & réseaux", text: "D1, D2, D3, FTTx, FTTh et infrastructures réseau." },
   { icon: Camera, title: "Sécurité", text: "Caméras, détecteurs, alarmes et systèmes de protection." },
   { icon: Lightbulb, title: "Domotique", text: "Des bâtiments plus intelligents, connectés et maîtrisés." },
   { icon: Smartphone, title: "IRVE", text: "Infrastructures de recharge pour véhicules électriques." },
-  { icon: Network, title: "Construction & réhabilitation", text: "Des projets intégrant les lots techniques dès la conception." },
-  { icon: CheckCircle2, title: "Gestion de projet / AMOA", text: "Cadrage, coordination, suivi et accompagnement de vos projets." }
+  { icon: Network, title: "Construction & réhabilitation", text: "Des projets intégrant les lots techniques dès la conception." }
 ];
 
 const steps = [
@@ -40,34 +41,7 @@ const steps = [
 export default function Home() {
   return (
     <main>
-      <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-[#10111a]/80 text-white backdrop-blur-xl">
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-          <Link href="/" className="text-xl font-black tracking-tight">CHEREKA<span className="text-brand">NET</span></Link>
-
-          <nav className="hidden items-center gap-7 text-sm font-semibold md:flex">
-            <Link href="/solutions" className="transition hover:text-brand">Solutions</Link>
-            <Link href="#expertise" className="transition hover:text-brand">Expertise</Link>
-            <Link href="#methode" className="transition hover:text-brand">Notre méthode</Link>
-            <Link href="/realizations" className="transition hover:text-brand">Réalisations</Link>
-            <Link href="/about" className="transition hover:text-brand">À propos</Link>
-          </nav>
-
-          <div className="flex items-center gap-3">
-            <Link href="/contact" className="hidden rounded-full bg-brand px-5 py-3 text-sm font-bold text-white transition hover:scale-[1.02] hover:bg-[#e12696] sm:inline-flex">Parler de votre projet</Link>
-            <details className="relative md:hidden">
-              <summary className="cursor-pointer list-none rounded-full border border-white/15 px-4 py-2 text-sm font-bold">Menu</summary>
-              <div className="absolute right-0 top-12 w-56 rounded-2xl border border-white/10 bg-[#171925] p-2 text-sm font-semibold shadow-2xl">
-                <Link href="/solutions" className="block rounded-xl px-4 py-3 hover:bg-white/5">Solutions</Link>
-                <Link href="#expertise" className="block rounded-xl px-4 py-3 hover:bg-white/5">Expertise</Link>
-                <Link href="#methode" className="block rounded-xl px-4 py-3 hover:bg-white/5">Notre méthode</Link>
-                <Link href="/realizations" className="block rounded-xl px-4 py-3 hover:bg-white/5">Réalisations</Link>
-                <Link href="/about" className="block rounded-xl px-4 py-3 hover:bg-white/5">À propos</Link>
-                <Link href="/contact" className="mt-1 block rounded-xl bg-brand px-4 py-3 text-white">Parler de votre projet</Link>
-              </div>
-            </details>
-          </div>
-        </div>
-      </header>
+      <SiteHeader dark />
 
       <section className="noise relative min-h-[760px] overflow-hidden bg-ink px-6 pb-24 pt-36 text-white lg:min-h-[850px] lg:px-10 lg:pb-32 lg:pt-44">
         <div className="absolute -right-40 -top-40 h-[520px] w-[520px] rounded-full bg-brand/25 blur-3xl" />
@@ -146,10 +120,10 @@ export default function Home() {
               <Link
                 href="/solutions"
                 key={pillar.number}
-                className={`group relative overflow-hidden rounded-[2rem] p-7 transition duration-500 hover:-translate-y-1 hover:shadow-2xl ${pillar.featured ? "bg-ink text-white lg:col-span-5 lg:row-span-2 lg:p-9" : "bg-white ring-1 ring-black/5 lg:col-span-7"}`}
+                className={`group relative min-h-[250px] overflow-hidden rounded-[2rem] p-7 transition duration-500 hover:-translate-y-1 hover:shadow-2xl ${pillar.featured ? "min-h-[520px] bg-ink text-white lg:col-span-5 lg:row-span-2 lg:p-9" : index === 3 ? "bg-white ring-1 ring-black/5 lg:col-start-1 lg:col-span-5" : "bg-white ring-1 ring-black/5 lg:col-start-6 lg:col-span-7"}`}
               >
                 <span className={`text-xs font-black ${pillar.featured ? "text-electric" : "text-brand"}`}>{pillar.number}</span>
-                <div className={pillar.featured ? "lg:min-h-[360px]" : "lg:flex lg:items-end lg:justify-between lg:gap-8"}>
+                <div className={pillar.featured ? "lg:min-h-[400px]" : "lg:flex lg:h-full lg:items-end lg:justify-between lg:gap-8"}>
                   <div>
                     <h3 className={`mt-10 text-2xl font-black tracking-tight ${pillar.featured ? "sm:text-3xl" : ""}`}>{pillar.title}</h3>
                     <p className={`mt-4 max-w-xl text-sm leading-6 ${pillar.featured ? "text-white/55" : "text-black/55"}`}>{pillar.text}</p>
