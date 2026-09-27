@@ -1,17 +1,17 @@
 import Link from "next/link";
-import { ArrowRight, Cable, Camera, CheckCircle2, Lightbulb, Network, Smartphone, Zap } from "lucide-react";
+import { ArrowRight, Cable, Camera, CheckCircle2, Lightbulb, Network, Smartphone } from "lucide-react";
 
 const groups = [
   {
     title: "Tech & Infrastructures",
-    intro: "Des infrastructures conçues pour être fiables, sécurisées et évolutives.",
+    intro: "Des infrastructures et projets conçus pour être fiables, sécurisés et évolutifs.",
     items: [
-      ["Électricité", "Installation, maintenance et accompagnement technique.", Zap],
       ["Fibre optique & réseaux", "Déploiement D1, D2, D3, FTTx et FTTh.", Cable],
       ["Sécurité / vidéosurveillance", "Caméras, détecteurs, alarmes et systèmes de sécurité.", Camera],
       ["Domotique", "Automatisation et pilotage intelligent des bâtiments.", Lightbulb],
       ["IRVE", "Solutions d’infrastructure de recharge pour véhicules électriques.", Smartphone],
-      ["Construction & réhabilitation", "Travaux et intégration des lots techniques.", Network]
+      ["Construction & réhabilitation", "Travaux et intégration des lots techniques.", Network],
+      ["Gestion de projet / AMOA", "Cadrage, coordination, suivi et accompagnement des projets.", CheckCircle2]
     ]
   },
   {
