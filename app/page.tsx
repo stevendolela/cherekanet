@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Cable,
   Camera,
+  CheckCircle2,
   ChevronRight,
   Lightbulb,
   MapPin,
