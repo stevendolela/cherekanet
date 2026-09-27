@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative overflow-hidden bg-ink px-6 pb-24 pt-40 text-white lg:px-10 lg:pb-32">
+      <section className="noise relative overflow-hidden bg-ink px-6 pb-24 pt-40 text-white lg:px-10 lg:pb-32">
         <div className="absolute -right-24 -top-32 h-96 w-96 rounded-full bg-brand/30 blur-3xl" />
         <div className="absolute bottom-0 left-1/2 h-72 w-72 rounded-full bg-electric/20 blur-3xl" />
         <div className="relative mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1.2fr_.8fr] lg:items-end">
@@ -71,7 +71,7 @@ export default function Home() {
               <a href="/solutions" className="inline-flex items-center gap-3 rounded-full border border-white/20 px-6 py-4 font-bold text-white/80 hover:bg-white/10">Découvrir nos solutions</a>
             </div>
           </div>
-          <div className="relative min-h-64 rounded-[2rem] border border-white/10 bg-white/[.04] p-8">
+          <div className="reveal reveal-delay-2 relative min-h-64 rounded-[2rem] border border-white/10 bg-white/[.04] p-8">
             <div className="absolute right-7 top-7 h-3 w-3 rounded-full bg-electric" />
             <p className="text-xs font-bold uppercase tracking-[.22em] text-white/40">Notre cœur d’expertise</p>
             <div className="mt-12 grid grid-cols-2 gap-3">{["Électricité", "Fibre", "Sécurité", "Domotique", "IRVE", "Construction"].map((x) => <div key={x} className="rounded-2xl border border-white/10 bg-white/[.05] p-4 text-sm font-semibold">{x}</div>)}</div>
@@ -87,7 +87,7 @@ export default function Home() {
             <p className="mt-6 text-lg leading-8 text-black/60">Un groupe structuré autour de cinq univers complémentaires, avec une priorité donnée aux métiers techniques et aux infrastructures.</p>
           </div>
           <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-            {pillars.map((pillar) => <a href="/solutions" key={pillar.number} className={`group rounded-[2rem] p-6 transition hover:-translate-y-1 ${pillar.featured ? "bg-ink text-white lg:col-span-2" : "bg-white"}`}>
+            {pillars.map((pillar) => <a href="/solutions" key={pillar.number} className={`group rounded-[2rem] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl ${pillar.featured ? "bg-ink text-white lg:col-span-2" : "bg-white ring-1 ring-black/5"}`}>
               <span className={`text-xs font-black ${pillar.featured ? "text-electric" : "text-brand"}`}>{pillar.number}</span>
               <h3 className="mt-12 text-2xl font-black">{pillar.title}</h3>
               <p className={`mt-4 text-sm leading-6 ${pillar.featured ? "text-white/60" : "text-black/60"}`}>{pillar.text}</p>
