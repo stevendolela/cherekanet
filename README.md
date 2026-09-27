@@ -11,8 +11,21 @@ Site institutionnel de CherekaNet Services.
 
 Le site est construit from scratch avec une priorité commerciale donnée à **Tech & Infrastructures**.
 
-## Structure prévue
+## Stack
 Next.js + TypeScript + Tailwind CSS.
 
-## Règle éditoriale
-L'expertise comptable ne fait pas partie du périmètre du site.
+## Développement
+```bash
+npm install
+npm run dev
+```
+
+Vérification TypeScript :
+```bash
+npm run lint
+```
+
+Build de production :
+```bash
+npm run build
+```
