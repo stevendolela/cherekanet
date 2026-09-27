@@ -1,9 +1,10 @@
 import Link from "next/link";
+import SiteHeader from "../../components/SiteHeader";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#10111a] px-6 py-10 text-white lg:px-10">
+    <main className="min-h-screen bg-[#10111a] px-6 pb-10 pt-32 text-white lg:px-10">
       <div className="mx-auto max-w-7xl">
         <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold text-white/60 hover:text-white"><ArrowLeft size={16}/> Retour</Link>
         <div className="mt-20 max-w-4xl">
