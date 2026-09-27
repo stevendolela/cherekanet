@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SiteHeader from "../../components/SiteHeader";
 import { ArrowRight, Cable, Camera, CheckCircle2, Lightbulb, Network, Smartphone } from "lucide-react";
 
 const groups = [
@@ -56,12 +57,7 @@ const groups = [
 export default function SolutionsPage() {
   return (
     <main className="min-h-screen bg-[#f7f7f5]">
-      <header className="border-b border-black/10 bg-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
-          <Link href="/" className="text-xl font-black tracking-tight">CHEREKA<span className="text-[#d51b8a]">NET</span></Link>
-          <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold">Accueil <ArrowRight size={16}/></Link>
-        </div>
-      </header>
+      <SiteHeader />
       <section className="bg-[#10111a] px-6 py-24 text-white lg:px-10">
         <div className="mx-auto max-w-7xl">
           <p className="text-sm font-bold uppercase tracking-[.22em] text-[#16a8d8]">Nos solutions</p>
