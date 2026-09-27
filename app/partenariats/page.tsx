@@ -25,10 +25,10 @@ export default function PartnershipsPage() {
 
           <article className="rounded-[2rem] bg-white p-8 ring-1 ring-black/5 lg:p-10">
             <Network size={28} className="text-[#16a8d8]" />
-            <p className="mt-12 text-xs font-black uppercase tracking-[.2em] text-black/35">Une logique de projet</p>
-            <h2 className="mt-3 text-3xl font-black">La bonne expertise au bon moment.</h2>
+            <p className="mt-12 text-xs font-black uppercase tracking-[.2em] text-black/35">Partenaire conseil & digital</p>
+            <h2 className="mt-3 text-3xl font-black">Taaji Consulting</h2>
             <p className="mt-5 max-w-xl text-sm leading-7 text-black/55">
-              Selon la nature du besoin, CherekaNet mobilise les compétences nécessaires pour cadrer, coordonner et réaliser les différentes composantes d’un projet.
+              Un partenaire complémentaire pour accompagner les projets et mobiliser des expertises adaptées aux besoins des organisations.
             </p>
           </article>
         </div>
