@@ -20,7 +20,7 @@ export default function SiteHeader({ dark = false }: SiteHeaderProps) {
           <Link href="/solutions" className="shrink-0 transition hover:text-brand">Solutions</Link>
           <Link href="/#expertise" className="shrink-0 transition hover:text-brand">Expertise</Link>
           <Link href="/#methode" className="shrink-0 transition hover:text-brand">Notre méthode</Link>
-          <Link href="/realizations" className="shrink-0 transition hover:text-brand">Réalisations</Link>
+          <Link href="/partenariats" className="shrink-0 transition hover:text-brand">Partenariats</Link>
           <Link href="/about" className="shrink-0 transition hover:text-brand">À propos</Link>
         </nav>
 
