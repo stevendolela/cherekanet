@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 const pillars = [
-  { number: "01", title: "Tech & Infrastructures", text: "Électricité, fibre & réseaux, sécurité, domotique, IRVE, construction et pilotage de projets techniques.", featured: true },
+  { number: "01", title: "Tech & Infrastructures", text: "Fibre & réseaux, sécurité, domotique, IRVE, construction et pilotage de projets techniques.", featured: true },
   { number: "02", title: "Solutions digitales", text: "Sites internet, applications et gestion de projets digitaux." },
   { number: "03", title: "Communication", text: "Réseaux sociaux, vidéos, supports et objets de communication." },
   { number: "04", title: "Événementiel", text: "Traiteur, décoration, sonorisation et organisation d’événements." },
@@ -21,12 +21,12 @@ const pillars = [
 ];
 
 const technicalServices = [
-  { icon: Zap, title: "Électricité", text: "Installation, mise en œuvre, maintenance et suivi." },
   { icon: Cable, title: "Fibre & réseaux", text: "D1, D2, D3, FTTx, FTTh et infrastructures réseau." },
   { icon: Camera, title: "Sécurité", text: "Caméras, détecteurs, alarmes et systèmes de protection." },
   { icon: Lightbulb, title: "Domotique", text: "Des bâtiments plus intelligents, connectés et maîtrisés." },
   { icon: Smartphone, title: "IRVE", text: "Infrastructures de recharge pour véhicules électriques." },
-  { icon: Network, title: "Construction & réhabilitation", text: "Des projets intégrant les lots techniques dès la conception." }
+  { icon: Network, title: "Construction & réhabilitation", text: "Des projets intégrant les lots techniques dès la conception." },
+  { icon: CheckCircle2, title: "Gestion de projet / AMOA", text: "Cadrage, coordination, suivi et accompagnement de vos projets." }
 ];
 
 const steps = [
@@ -172,7 +172,7 @@ export default function Home() {
               <p className="text-sm font-bold uppercase tracking-[.22em] text-brand">Tech & Infrastructures</p>
               <h2 className="mt-4 text-4xl font-black tracking-[-.03em] sm:text-5xl">Construire.<br />Connecter.<br />Sécuriser.</h2>
               <p className="mt-6 max-w-md leading-7 text-black/55">
-                Notre expertise technique couvre les infrastructures électriques et numériques, la sécurité, la domotique et les nouveaux usages énergétiques.
+                Notre expertise couvre les infrastructures numériques, la sécurité, la domotique, les nouveaux usages énergétiques et le pilotage de projets.
               </p>
               <Link href="/solutions/tech" className="mt-8 inline-flex items-center gap-2 font-bold text-brand">
                 Voir toute l’expertise <ArrowRight size={17} />
@@ -200,7 +200,7 @@ export default function Home() {
               <h2 className="mt-4 text-4xl font-black tracking-[-.03em] sm:text-5xl">De l’idée à la réalisation.</h2>
             </div>
             <p className="text-lg leading-8 text-black/55">
-              Étude, planification, coordination, suivi de chantier, contrôle qualité et réception : nous structurons chaque étape du projet.
+              Étude, cadrage, planification, coordination, suivi, contrôle qualité et réception : nous structurons chaque étape du projet.
             </p>
           </div>
 
