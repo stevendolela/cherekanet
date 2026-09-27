@@ -85,8 +85,8 @@ export default async function SolutionDetailPage({ params }: { params: Promise<{
     <main className="min-h-screen bg-[#f7f7f5]">
       <SiteHeader />
 
-      <section className="bg-[#10111a] px-6 py-24 text-white lg:px-10 lg:py-32">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-[#10111a] px-6 pb-24 pt-28 text-white lg:px-10 lg:pb-32 lg:pt-32">
+        <div className="mx-auto max-w-7xl">\n          <Link href="/" className="mb-10 inline-flex items-center gap-2 text-sm font-bold text-white/65 transition hover:text-white"><ArrowLeft size={16} /> Retour à l’accueil</Link>
           <p className="text-sm font-bold uppercase tracking-[.22em] text-[#16a8d8]">{service.label}</p>
           <h1 className="mt-4 max-w-4xl text-5xl font-black tracking-tight sm:text-7xl">{service.title}</h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-white/60">{service.intro}</p>
