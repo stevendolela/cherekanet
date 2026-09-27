@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   ArrowRight,
   Cable,
@@ -33,25 +34,25 @@ export default function Home() {
     <main>
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-black/10 bg-[#f7f7f5]/90 backdrop-blur">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-          <a href="#" className="text-xl font-black tracking-tight">CHEREKA<span className="text-brand">NET</span></a>
+          <a href="#" className="text-xl font-black tracking-tight">CHEREKA<span className="text-brand">NET</span></Link>
           <nav className="hidden items-center gap-7 text-sm font-semibold md:flex">
-            <a href="/solutions" className="hover:text-brand">Solutions</a>
-            <a href="#expertise" className="hover:text-brand">Expertise</a>
-            <a href="#methode" className="hover:text-brand">Notre méthode</a>
-            <a href="/realizations" className="hover:text-brand">Réalisations</a>
-            <a href="/about" className="hover:text-brand">À propos</a>
+            <Link href="/solutions" className="hover:text-brand">Solutions</Link>
+            <a href="#expertise" className="hover:text-brand">Expertise</Link>
+            <a href="#methode" className="hover:text-brand">Notre méthode</Link>
+            <Link href="/realizations" className="hover:text-brand">Réalisations</Link>
+            <Link href="/about" className="hover:text-brand">À propos</Link>
           </nav>
           <div className="flex items-center gap-3">
-            <a href="/contact" className="hidden rounded-full bg-ink px-5 py-3 text-sm font-bold text-white transition hover:bg-brand sm:inline-flex">Parler de votre projet</a>
+            <Link href="/contact" className="hidden rounded-full bg-ink px-5 py-3 text-sm font-bold text-white transition hover:bg-brand sm:inline-flex">Parler de votre projet</Link>
             <details className="relative md:hidden">
               <summary className="cursor-pointer list-none rounded-full border border-black/10 px-4 py-2 text-sm font-bold">Menu</summary>
               <div className="absolute right-0 top-12 w-56 rounded-2xl border border-black/10 bg-white p-2 text-sm font-semibold shadow-xl">
-                <a href="/solutions" className="block rounded-xl px-4 py-3 hover:bg-black/5">Solutions</a>
-                <a href="#expertise" className="block rounded-xl px-4 py-3 hover:bg-black/5">Expertise</a>
-                <a href="#methode" className="block rounded-xl px-4 py-3 hover:bg-black/5">Notre méthode</a>
-                <a href="/realizations" className="block rounded-xl px-4 py-3 hover:bg-black/5">Réalisations</a>
-                <a href="/about" className="block rounded-xl px-4 py-3 hover:bg-black/5">À propos</a>
-                <a href="/contact" className="mt-1 block rounded-xl bg-ink px-4 py-3 text-white">Parler de votre projet</a>
+                <Link href="/solutions" className="block rounded-xl px-4 py-3 hover:bg-black/5">Solutions</Link>
+                <a href="#expertise" className="block rounded-xl px-4 py-3 hover:bg-black/5">Expertise</Link>
+                <a href="#methode" className="block rounded-xl px-4 py-3 hover:bg-black/5">Notre méthode</Link>
+                <Link href="/realizations" className="block rounded-xl px-4 py-3 hover:bg-black/5">Réalisations</Link>
+                <Link href="/about" className="block rounded-xl px-4 py-3 hover:bg-black/5">À propos</Link>
+                <Link href="/contact" className="mt-1 block rounded-xl bg-ink px-4 py-3 text-white">Parler de votre projet</Link>
               </div>
             </details>
           </div>
@@ -67,8 +68,8 @@ export default function Home() {
             <h1 className="max-w-4xl text-5xl font-black leading-[.95] tracking-[-.04em] sm:text-6xl lg:text-8xl">Des solutions<br /><span className="text-brand">pour vos projets.</span></h1>
             <p className="mt-8 max-w-2xl text-lg leading-8 text-white/70">Technologies, infrastructures, digital, communication et services. Une expertise opérationnelle pour transformer vos projets en réalisations.</p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="/contact" className="group inline-flex items-center gap-3 rounded-full bg-brand px-6 py-4 font-bold">Parler de votre projet <ArrowRight size={18} className="transition group-hover:translate-x-1" /></a>
-              <a href="/solutions" className="inline-flex items-center gap-3 rounded-full border border-white/20 px-6 py-4 font-bold text-white/80 hover:bg-white/10">Découvrir nos solutions</a>
+              <Link href="/contact" className="group inline-flex items-center gap-3 rounded-full bg-brand px-6 py-4 font-bold">Parler de votre projet <ArrowRight size={18} className="transition group-hover:translate-x-1" /></Link>
+              <Link href="/solutions" className="inline-flex items-center gap-3 rounded-full border border-white/20 px-6 py-4 font-bold text-white/80 hover:bg-white/10">Découvrir nos solutions</Link>
             </div>
           </div>
           <div className="reveal reveal-delay-2 relative min-h-64 rounded-[2rem] border border-white/10 bg-white/[.04] p-8">
@@ -87,12 +88,12 @@ export default function Home() {
             <p className="mt-6 text-lg leading-8 text-black/60">Un groupe structuré autour de cinq univers complémentaires, avec une priorité donnée aux métiers techniques et aux infrastructures.</p>
           </div>
           <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-            {pillars.map((pillar) => <a href="/solutions" key={pillar.number} className={`group rounded-[2rem] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl ${pillar.featured ? "bg-ink text-white lg:col-span-2" : "bg-white ring-1 ring-black/5"}`}>
+            {pillars.map((pillar) => <Link href="/solutions" key={pillar.number} className={`group rounded-[2rem] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl ${pillar.featured ? "bg-ink text-white lg:col-span-2" : "bg-white ring-1 ring-black/5"}`}>
               <span className={`text-xs font-black ${pillar.featured ? "text-electric" : "text-brand"}`}>{pillar.number}</span>
               <h3 className="mt-12 text-2xl font-black">{pillar.title}</h3>
               <p className={`mt-4 text-sm leading-6 ${pillar.featured ? "text-white/60" : "text-black/60"}`}>{pillar.text}</p>
               <span className="mt-8 inline-flex items-center gap-2 text-sm font-bold">Explorer <ChevronRight size={16} /></span>
-            </a>)}
+            </Link>)}
           </div>
         </div>
       </section>
@@ -127,7 +128,7 @@ export default function Home() {
 
       <section id="contact" className="px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl rounded-[2.5rem] bg-brand p-8 text-white sm:p-12 lg:p-16">
-          <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end"><div><p className="text-sm font-bold uppercase tracking-[.22em] text-white/60">Votre projet</p><h2 className="mt-4 max-w-3xl text-4xl font-black tracking-tight sm:text-6xl">Vous avez un projet ? Parlons-en.</h2></div><a href="/contact" className="inline-flex items-center justify-center gap-3 rounded-full bg-ink px-7 py-4 font-bold">Nous contacter <ArrowRight size={18} /></a></div>
+          <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end"><div><p className="text-sm font-bold uppercase tracking-[.22em] text-white/60">Votre projet</p><h2 className="mt-4 max-w-3xl text-4xl font-black tracking-tight sm:text-6xl">Vous avez un projet ? Parlons-en.</h2></div><Link href="/contact" className="inline-flex items-center justify-center gap-3 rounded-full bg-ink px-7 py-4 font-bold">Nous contacter <ArrowRight size={18} /></Link></div>
         </div>
       </section>
 
