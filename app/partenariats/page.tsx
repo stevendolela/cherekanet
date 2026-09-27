@@ -1,13 +1,13 @@
 import Link from "next/link";
 import SiteHeader from "../../components/SiteHeader";
-import { ArrowRight, Handshake, Network } from "lucide-react";
+import { ArrowLeft, ArrowRight, Handshake, Network } from "lucide-react";
 
 export default function PartnershipsPage() {
   return (
     <main className="min-h-screen bg-[#f7f7f5]">
       <SiteHeader />
-      <section className="mx-auto max-w-7xl px-6 pb-20 pt-36 lg:px-10 lg:pb-28">
-        <p className="text-sm font-bold uppercase tracking-[.22em] text-[#d51b8a]">Partenariats</p>
+      <section className="mx-auto max-w-7xl px-6 pb-20 pt-32 lg:px-10 lg:pb-28 lg:pt-36">
+        <Link href="/" className="mb-10 inline-flex items-center gap-2 text-sm font-bold text-black/55 transition hover:text-black"><ArrowLeft size={16} /> Retour à l’accueil</Link>\n        <p className="text-sm font-bold uppercase tracking-[.22em] text-[#d51b8a]">Partenariats</p>
         <h1 className="mt-4 max-w-4xl text-5xl font-black tracking-tight sm:text-7xl">Des expertises complémentaires.</h1>
         <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">
           CherekaNet s’appuie sur des partenariats et des expertises complémentaires pour accompagner ses clients sur des projets qui nécessitent plusieurs compétences.
