@@ -5,14 +5,14 @@ const services = {
   tech: {
     label: "01",
     title: "Tech & Infrastructures",
-    intro: "Des infrastructures conçues pour être fiables, sécurisées et évolutives.",
+    intro: "Des infrastructures et projets conçus pour être fiables, sécurisés et évolutifs.",
     items: [
-      ["Électricité", "Installation, mise en œuvre, maintenance et suivi technique."],
       ["Fibre optique & réseaux", "Déploiement et accompagnement sur les infrastructures D1, D2, D3, FTTx et FTTh."],
       ["Sécurité / vidéosurveillance", "Caméras, détecteurs, alarmes et systèmes de protection."],
       ["Domotique", "Automatisation et pilotage intelligent des bâtiments."],
       ["IRVE", "Infrastructures de recharge pour véhicules électriques."],
-      ["Construction & réhabilitation", "Travaux et intégration des lots techniques dans les projets."]
+      ["Construction & réhabilitation", "Travaux et intégration des lots techniques dans les projets."],
+      ["Gestion de projet / AMOA", "Cadrage, coordination, suivi et accompagnement des projets."]
     ]
   },
   digital: {
