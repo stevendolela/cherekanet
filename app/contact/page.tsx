@@ -7,7 +7,6 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#10111a] px-6 pb-10 pt-32 text-white lg:px-10">
       <div className="mx-auto max-w-7xl">
-        <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold text-white/60 hover:text-white"><ArrowLeft size={16}/> Retour</Link>
         <div className="mt-20 grid gap-16 lg:grid-cols-2">
           <div>
             <p className="text-sm font-bold uppercase tracking-[.22em] text-[#16a8d8]">Contact</p>
