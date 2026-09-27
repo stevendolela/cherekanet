@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SiteHeader from "../../components/SiteHeader";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 
 const categories = [
@@ -11,12 +12,7 @@ const categories = [
 export default function RealizationsPage() {
   return (
     <main className="min-h-screen bg-[#f7f7f5]">
-      <header className="border-b border-black/10 bg-white px-6 py-6 lg:px-10">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold"><ArrowLeft size={16}/> CherekaNet</Link>
-          <span className="text-sm font-bold text-black/40">Réalisations</span>
-        </div>
-      </header>
+            <SiteHeader />
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
         <p className="text-sm font-bold uppercase tracking-[.22em] text-[#d51b8a]">Réalisations</p>
         <h1 className="mt-4 max-w-4xl text-5xl font-black tracking-tight sm:text-7xl">Le projet comme preuve.</h1>
