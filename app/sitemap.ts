@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/solutions/communication",
     "/solutions/evenementiel",
     "/solutions/conseil-services",
-    "/realizations",
+    "/partenariats",
     "/about",
     "/contact",
   ];
