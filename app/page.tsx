@@ -40,7 +40,7 @@ const steps = [
 export default function Home() {
   return (
     <main>
-      <SiteHeader dark />
+      <SiteHeader />
 
       <section className="noise relative min-h-[760px] overflow-hidden bg-ink px-6 pb-24 pt-36 text-white lg:min-h-[850px] lg:px-10 lg:pb-32 lg:pt-44">
         <div className="absolute -right-40 -top-40 h-[520px] w-[520px] rounded-full bg-brand/25 blur-3xl" />
