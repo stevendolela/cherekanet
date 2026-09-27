@@ -1,5 +1,5 @@
-import "./globals.css";
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.cherekane.net"),
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
   description: "Technologies, infrastructures, solutions digitales, communication, événementiel et services en France et en RDC.",
   applicationName: "CherekaNet",
-  keywords: ["CherekaNet", "infrastructures", "électricité", "fibre optique", "sécurité", "digital", "RDC", "France"],
+  keywords: ["CherekaNet", "infrastructures", "fibre optique", "sécurité", "domotique", "IRVE", "digital", "RDC", "France"],
   openGraph: {
     title: "CherekaNet — Solutions & Infrastructures",
     description: "Des solutions pour vos projets en France et en RDC.",
