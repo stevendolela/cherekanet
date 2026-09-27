@@ -10,8 +10,7 @@ import {
   MapPin,
   Network,
   ShieldCheck,
-  Smartphone,
-  Zap
+  Smartphone
 } from "lucide-react";
 
 const pillars = [
