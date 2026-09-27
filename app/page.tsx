@@ -166,28 +166,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="methode" className="bg-[#ececea] px-6 py-24 lg:px-10 lg:py-32">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-10 lg:grid-cols-2">
+      <section id="methode" className="relative overflow-hidden bg-[#f7f7f5] px-6 py-24 lg:px-10 lg:py-32">
+        <div className="relative mx-auto max-w-7xl">
+          <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-end">
             <div>
               <p className="text-sm font-bold uppercase tracking-[.22em] text-brand">Notre méthode</p>
               <h2 className="mt-4 text-4xl font-black tracking-[-.03em] sm:text-5xl">De l’idée à la réalisation.</h2>
             </div>
-            <p className="text-lg leading-8 text-black/55">
+            <p className="max-w-2xl text-lg leading-8 text-black/55">
               Étude, cadrage, planification, coordination, suivi, contrôle qualité et réception : nous structurons chaque étape du projet.
             </p>
           </div>
-
           <div className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map(([number, title, text]) => (
-              <article key={number} className="group rounded-[1.75rem] bg-white p-7 transition hover:-translate-y-1 hover:shadow-xl">
-                <span className="text-sm font-black text-brand">{number}</span>
-                <div className="mt-16">
-                  <h3 className="text-xl font-black">{title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-black/50">{text}</p>
+              <article key={number} className="group relative min-h-[245px] rounded-[1.75rem] border border-black/5 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-brand/20 hover:shadow-xl">
+                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-brand/20 bg-white text-xs font-black text-brand shadow-sm">{'{'}number{'}'}</span>
+                <div className="mt-14">
+                  <h3 className="text-xl font-black">{'{'}title{'}'}</h3>
+                  <p className="mt-3 text-sm leading-6 text-black/50">{'{'}text{'}'}</p>
                 </div>
               </article>
-            ))}
+            )){'}'}
           </div>
         </div>
       </section>
