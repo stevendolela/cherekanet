@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowLeft, Mail, MapPin } from "lucide-react";
+import ContactForm from "./ContactForm";
 
 export default function ContactPage() {
   return (
@@ -13,6 +14,7 @@ export default function ContactPage() {
             <p className="mt-7 max-w-xl text-lg leading-8 text-white/60">Présentez-nous votre besoin. Nous vous orienterons vers la solution et l’équipe adaptées.</p>
           </div>
           <div className="space-y-4">
+            <ContactForm />
             <a href="mailto:info@cherekane.net" className="flex items-center gap-5 rounded-2xl border border-white/10 p-6 hover:bg-white/5"><Mail className="text-[#16a8d8]"/><div><p className="text-xs uppercase tracking-widest text-white/40">Email</p><p className="mt-1 font-bold">info@cherekane.net</p></div></a>
             <div className="flex items-center gap-5 rounded-2xl border border-white/10 p-6"><MapPin className="text-[#16a8d8]"/><div><p className="text-xs uppercase tracking-widest text-white/40">France</p><p className="mt-1 font-bold">Viry-Châtillon</p></div></div>
             <div className="flex items-center gap-5 rounded-2xl border border-white/10 p-6"><MapPin className="text-[#16a8d8]"/><div><p className="text-xs uppercase tracking-widest text-white/40">RDC</p><p className="mt-1 font-bold">Kinshasa</p></div></div>
