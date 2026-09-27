@@ -1,33 +1,44 @@
 import Link from "next/link";
 import SiteHeader from "../../components/SiteHeader";
-import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { ArrowRight, Handshake, Network } from "lucide-react";
 
-const categories = [
-  ["Tech", "Fibre, réseaux, sécurité, domotique, IRVE et infrastructures."],
-  ["Digital", "Sites, applications et outils numériques."],
-  ["Communication", "Supports, contenus et présence digitale."],
-  ["Événementiel", "Événements privés et professionnels."]
-];
-
-export default function RealizationsPage() {
+export default function PartnershipsPage() {
   return (
     <main className="min-h-screen bg-[#f7f7f5]">
-            <SiteHeader />
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
-        <p className="text-sm font-bold uppercase tracking-[.22em] text-[#d51b8a]">Réalisations</p>
-        <h1 className="mt-4 max-w-4xl text-5xl font-black tracking-tight sm:text-7xl">Le projet comme preuve.</h1>
-        <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">Cette section est prête à accueillir les réalisations réelles de CherekaNet et de ses équipes.</p>
-        <div className="mt-16 grid gap-5 md:grid-cols-2">
-          {categories.map(([title, text], i) => (
-            <article key={title} className="group min-h-72 rounded-[2rem] bg-white p-7 ring-1 ring-black/5">
-              <span className="text-xs font-black text-[#d51b8a]">0{i + 1}</span>
-              <div className="flex h-full flex-col justify-end">
-                <h2 className="text-3xl font-black">{title}</h2>
-                <p className="mt-3 max-w-md text-sm leading-6 text-black/55">{text}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-bold">Voir la catégorie <ArrowUpRight size={16}/></span>
-              </div>
-            </article>
-          ))}
+      <SiteHeader />
+      <section className="mx-auto max-w-7xl px-6 pb-20 pt-36 lg:px-10 lg:pb-28">
+        <p className="text-sm font-bold uppercase tracking-[.22em] text-[#d51b8a]">Partenariats</p>
+        <h1 className="mt-4 max-w-4xl text-5xl font-black tracking-tight sm:text-7xl">Des expertises complémentaires.</h1>
+        <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">
+          CherekaNet s’appuie sur des partenariats et des expertises complémentaires pour accompagner ses clients sur des projets qui nécessitent plusieurs compétences.
+        </p>
+
+        <div className="mt-16 grid gap-5 lg:grid-cols-2">
+          <article className="rounded-[2rem] bg-ink p-8 text-white lg:p-10">
+            <Handshake size={28} className="text-electric" />
+            <p className="mt-12 text-xs font-black uppercase tracking-[.2em] text-white/40">Partenaire technique</p>
+            <h2 className="mt-3 text-3xl font-black">KingTech Energies</h2>
+            <p className="mt-5 max-w-xl text-sm leading-7 text-white/60">
+              Un partenariat présenté par CherekaNet pour renforcer son expertise sur les infrastructures techniques, notamment la fibre optique, les systèmes de sécurité, la domotique et les projets d’infrastructure.
+            </p>
+          </article>
+
+          <article className="rounded-[2rem] bg-white p-8 ring-1 ring-black/5 lg:p-10">
+            <Network size={28} className="text-[#16a8d8]" />
+            <p className="mt-12 text-xs font-black uppercase tracking-[.2em] text-black/35">Une logique de projet</p>
+            <h2 className="mt-3 text-3xl font-black">La bonne expertise au bon moment.</h2>
+            <p className="mt-5 max-w-xl text-sm leading-7 text-black/55">
+              Selon la nature du besoin, CherekaNet mobilise les compétences nécessaires pour cadrer, coordonner et réaliser les différentes composantes d’un projet.
+            </p>
+          </article>
+        </div>
+
+        <div className="mt-10 rounded-[2rem] bg-[#ececea] p-8 sm:p-10">
+          <p className="text-sm font-bold uppercase tracking-[.22em] text-[#d51b8a]">Vous souhaitez collaborer ?</p>
+          <h2 className="mt-4 max-w-2xl text-3xl font-black sm:text-4xl">Parlons de votre projet ou de votre partenariat.</h2>
+          <Link href="/contact" className="mt-7 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-4 font-bold text-white transition hover:scale-[1.02]">
+            Nous contacter <ArrowRight size={17} />
+          </Link>
         </div>
       </section>
     </main>
